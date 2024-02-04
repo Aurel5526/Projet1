@@ -1,0 +1,59 @@
+let fruits = [
+    {
+        "nom" : "olives",
+        "prix" : 5,
+        "couleur" : "noire" 
+    },
+    {
+        "nom" : "date",
+        "prix" : 2,
+        "couleur" : "marron" 
+    },
+    {
+        "nom" : "raisin",
+        "prix" : 5,
+        "couleur" : "verte" 
+    },
+    {
+        "nom" : "grenade",
+        "prix" : 8,
+        "couleur" : "rouge"
+     
+    },
+    {
+        "nom" : "orge",
+        "prix" : 10,
+        "couleur" : "beige" 
+    }
+]
+console.log (fruits);
+
+
+function CalculPrice (a, b){
+
+    let price = a * b;
+
+    return price;
+}
+
+
+fruits.forEach(function (a, b) 
+{
+    let QTE = prompt ("combien de " + a.nom + " voulez-vous?");
+    console.log (QTE);
+    alert ("Vous en avez pour " + CalculPrice (a.prix, QTE) + " shekels de " + a.nom);
+    fruits.push {QTE};
+    console.log (fruits);
+});
+
+/*for (i=0; i<fruits.length; i++)
+    {
+        let a = fruits.nom;
+        function CheckQuantity(a)
+        {
+
+            let QTE = prompt ("combien de " + a);
+            console.log (QTE);
+        }
+    }
+*/

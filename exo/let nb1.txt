@@ -1,0 +1,33 @@
+let nb1 = prompt ("donne moi un chiffre");
+let nb2 = prompt ("donne moi un autre chiffre");
+let operateur = prompt ("+ - x ou / ?");
+
+function nb (nb1, nb2, operateur){
+
+    let result;
+
+    if (operateur == "+"){
+        result = nb1 + nb2
+    }
+
+    else 
+     if (operateur == "-"){
+        result = nb1 - nb2
+    }
+
+    else 
+     if (operateur == "x"){
+        result = nb1 * nb2
+    }
+
+    else 
+     if (operateur == "/"){
+        result = nb1 / nb2
+    };
+
+    return result;
+}
+
+
+let r = nb(nb1,nb2,operateur);
+alert(r);

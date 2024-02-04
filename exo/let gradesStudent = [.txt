@@ -1,0 +1,71 @@
+let gradesStudent = [
+	["Israel",[56,87,97,33,23,55],[2020]],
+	["Dan",[34,87,97,99],[2020]],
+	["Moria",[100,45,66,78],[2020]],
+	["Asher",[88,99],[2015]],
+	["Simha",[32,66,33,99,100,100,67],[2017]],
+	["Ariel",[98,79,70],[2017]],
+	["Shimon",[34,87,97,99],[2017]],
+	["Devorah",[100,45,66,78],[2020]],
+	["Avraham",[88,99],[2015]]
+
+];
+
+
+console.log (gradesStudent);
+
+
+function getNewGrade(){
+    for(i=0; i<9; i++)
+    {
+    let newNote = prompt ("Veuillez saisir une note pour " + gradesStudent[i][0]);
+    console.log (newNote);
+    gradesStudent[i][1].push(newNote);
+    console.log (gradesStudent);
+
+    }
+}
+
+getNewGrade();
+
+
+/* Calcul de la moyenne 
+var somme=0;
+for (var i=0; i<aleatoire.length; i++) {
+  somme+=aleatoire[i];
+}
+var moyenne=somme / aleatoire.length;
+document.write( "moyenne = " + moyenne );*/
+
+function calculAverage()
+{
+let moyenne=0;
+for (valeur of gradesStudent)
+    //i=0; i<(gradesStudent[i][1]).length; i++) 
+    {
+        /*for (j=0; j<10; j++){
+
+            somme += gradesStudent[i][1][j];
+            console.log ("c'est " + somme);
+        }*/
+        somme = somme + valeur;
+        let moyenne = somme/gradesStudent.length;
+        console.log (moyenne);
+    }
+
+}
+
+
+calculAverage();
+
+function setAverage()
+{
+
+    for(k=0; k<9; k++)
+    {
+    gradesStudent[k].push(moyenne);
+    
+
+    }
+}
+console.log 

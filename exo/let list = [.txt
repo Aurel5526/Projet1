@@ -1,0 +1,59 @@
+let list = [
+    {
+        name : "dan",
+        age : 33
+    },
+    {
+        name : "israel",
+        age : 56
+    },
+    {
+        name : "devorah",
+        age : 76
+    },
+    {
+        name : "binyamin",
+        age : 45
+    },
+    {
+        name : "sarah",
+        age : 23
+    },
+    {
+        name : "esther",
+        age : 55
+    },
+    {
+        name : "moshe",
+        age : 11
+    },
+    {
+        name : "avraham",
+        age : 9
+    }
+    ];
+
+    let newAge = list.map(function(a){
+        return a.age;
+        
+    });
+    
+    console.log (newAge);
+
+    let newName = list.map(function(a){
+        let b = a.name[0].toUpperCase();
+//console.log("aa",a.name[0]);
+        let c = "";
+
+        for (i=1; i<=a.name.length; i++){
+            c = c + (a.name[i]);
+//console.log("BB",c);
+
+        }
+        console.log (c);
+        let d = b + c;
+        return d;
+
+        
+    });
+    console.log (newName);

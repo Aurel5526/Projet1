@@ -1,0 +1,6 @@
+let listUser = ["Binyamin",[65,87], "Lea", [93,68], "Sarah", [95,77]];
+let moy1 = (listUser[1][0]+ listUser[1][1])/2;
+let moy2 = (listUser[3][0]+ listUser[3][1])/2;
+let moy3 = (listUser[5][0]+ listUser[5][1])/2;
+
+alert(listUser[0] + " " + (moy1) + " " + listUser[2]  + " " + (moy2)  + " " + listUser[4]  + " " + (moy3) );

@@ -1,0 +1,8 @@
+let users = ["Tal", "Yair", "Avishay", "Levi", "Shiloh"];
+console.log (users);
+
+let q = prompt("Entre un nom");
+
+if q.includes(users) {
+    alert("bienvenue");
+}

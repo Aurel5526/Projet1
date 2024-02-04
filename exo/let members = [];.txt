@@ -1,0 +1,25 @@
+let members = [];
+
+
+function SignUp (){
+
+    let Nom = prompt ("Veuillez saisir votre nom") ;
+    let Prenom = prompt ("Veuillez saisir votre prenom");
+    let Email = prompt ("Veuillez saisir votre email");
+    let MDP = prompt ("Veuillez saisir votre mot de passe");
+    
+    let r = [Nom, Prenom, Email, MDP];
+    members.push(r);
+    Alert(members);
+    
+}
+
+SignUp();
+
+//let members = SignUp (Nom, Prenom, Email, MDP); 
+
+
+//let SignUp (Nom, Prenom, Email, MDP);
+
+
+

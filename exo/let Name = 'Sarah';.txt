@@ -1,0 +1,8 @@
+let Name = 'Sarah';
+let firstname = 'Guez';
+let city = 'Netanya';
+let age = '40';
+var fullstack = 'oui/non';
+
+//alert (Name + " " + firstname + " " + city + " " + age + " " + fullstack);
+let r = prompt(fullstack);

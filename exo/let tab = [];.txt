@@ -1,0 +1,37 @@
+let tab = [];
+
+for (i=0; i<3; i++) 
+{
+    let Nom = prompt ("Veuillez saisir votre nom");
+    let TZ = prompt ("Veuillez saisir votre teoudat zeout");
+    let Vaccin = confirm("Vous etes vaccine?");
+
+    tab.push([Nom, TZ, Vaccin]);
+        
+}
+
+let newTab = [];
+
+for (i=0; i<tab.length; i++)
+    {
+        if (!(tab[i][2]))
+            {
+                newTab.push([tab[i][0], tab[i][2]]);
+            
+            }
+    }
+
+console.log (tab);
+console.log ("avant " + newTab);
+
+for (i=0; i<newTab.length; i++)
+    {
+        let rep = confirm("Vous etes vaccine?");
+        console.log (rep);
+        if (rep)
+            {
+                newTab.splice(newTab[i][2], 1, rep);
+                console.log ("apres " + newTab);
+            }
+    }
+
